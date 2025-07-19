@@ -1,9 +1,9 @@
 output "pipeline_name" {
-  value = aws_codepipeline.pipeline.name
+  value = module.codepipeline.pipeline_name
 }
 
 output "artifact_bucket" {
-  value = aws_s3_bucket.artifact_bucket.bucket
+  value = module.s3.artifact_bucket
 }
 
 output "codedeploy_app_name" {
